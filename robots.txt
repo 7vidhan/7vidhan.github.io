@@ -1,0 +1,1 @@
+User-agent: * Disallow: Sitemap: https://7vidhan.github.io/sitemap.xml
