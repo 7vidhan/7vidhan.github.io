@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">
+    <h1 class="post-title" style="font-family: 'Gloria Hallelujah', cursive; margin-bottom: 20px;">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
@@ -11,7 +11,7 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc" style="font-family: 'Gloria Hallelujah', cursive;">{{ page.subtitle }}</p>
   </header>
 
   <article>
@@ -32,9 +32,12 @@ layout: default
             cache_bust=true
           %}
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
+            {%- if page.profile.more_info %}
+            <div class="more-info">
+              <div id="typedtext"></div>
+              {{ page.profile.more_info }}
+            </div>
+            {%- endif %}
       </div>
     {% endif %}
 
@@ -78,3 +81,50 @@ layout: default
     {% endif %}
   </article>
 </div>
+
+<script>
+  const aText = [
+      "Hi, I'm Vidhan Kashyap",
+      "Welcome to my website !",
+      "Exploring Science and Computing"
+      // "Hover to reveal AI-generated me ~"
+  ];
+
+  let iSpeed = 80;
+  let iDeleteSpeed = 30; 
+  let iPauseBetween = 1500;
+  let iIndex = 0;
+  let iTextPos = 0;
+  let iDirection = 1;
+  const destination = document.getElementById("typedtext");
+
+  function typewriter() {
+      if (!destination) {
+          console.error("Typedtext element not found");
+          return;
+      }
+
+      if (iDirection === 1) {
+          destination.innerHTML = aText[iIndex].substring(0, iTextPos) + '<span style="color: #FF5733;">_</span>';;
+          iTextPos++;
+          if (iTextPos > aText[iIndex].length) {
+              iDirection = -1;
+              setTimeout(typewriter, iPauseBetween);
+              return;
+          }
+      } else {
+          destination.innerHTML = aText[iIndex].substring(0, iTextPos) + '<span style="color: #FF5733;">_</span>';;
+          iTextPos--;
+          if (iTextPos < 0) {
+              iDirection = 1;
+              iIndex = (iIndex + 1) % aText.length;
+              setTimeout(typewriter, 300);
+              return;
+          }
+      }
+
+      setTimeout(typewriter, iDirection === 1 ? iSpeed : iDeleteSpeed);
+  }
+
+  typewriter();
+</script>
