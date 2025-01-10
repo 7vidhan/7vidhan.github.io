@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
+title: Blog
 nav: true
 nav_order: 1
 pagination:
@@ -26,6 +26,9 @@ pagination:
   <div class="header-bar">
     <h1>{{ site.blog_name }}</h1>
     <h2>{{ site.blog_description }}</h2>
+    <h3><figure><center>
+  <img width="300" src="/assets/img/blog_pic.jpg"/>
+</center></figure></h3>
   </div>
   {% endif %}
 
@@ -56,7 +59,7 @@ pagination:
   </div>
   {% endif %}
 
-{% assign featured_posts = site.posts | where: "featured", "true" %}
+<!-- {% assign featured_posts = site.posts | where: "featured", "true" %}
 {% if featured_posts.size > 0 %}
 <br>
 
@@ -99,7 +102,7 @@ pagination:
     </div>
     <hr>
 
-{% endif %}
+{% endif %} -->
 
   <ul class="post-list">
 
