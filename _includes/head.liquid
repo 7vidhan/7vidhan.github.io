@@ -1,189 +1,244 @@
-<!-- Metadata, OpenGraph and Schema.org -->
-{% include metadata.liquid %}
+    <!-- Metadata, OpenGraph and Schema.org -->
+    {% include metadata.html %}
 
-<!-- Bootstrap & MDB -->
-<link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
-<link
-  rel="stylesheet"
-  href="{{ site.third_party_libraries.mdb.url.css }}"
-  integrity="{{ site.third_party_libraries.mdb.integrity.css }}"
-  crossorigin="anonymous"
->
 
-{% if page.pretty_table %}
-  <!-- Bootstrap Table -->
-  <link
-    defer
-    rel="stylesheet"
-    href="{{ site.third_party_libraries.bootstrap-table.url.css }}"
-    integrity="{{ site.third_party_libraries.bootstrap-table.integrity.css }}"
-    crossorigin="anonymous"
-  >
-{% endif %}
+    <style>
+    .main-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+    }
+    .canvas-container {
+        flex: 2; /* 2 parts of the space */
+        max-width: 650px;
+    }
+    #myCanvas {
+        width: 100%;
+        height: auto;
+    }
+    .controls-container {
+        flex: 1; /* 1 part of the space */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .slider-button-container {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Space between slider and button */
+    }
+    @media (max-width: 600px) {
+        .main-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    .slider-button-container {
+    flex-direction: row; /* Keep slider and button side by side */
+    justify-content: center; /* Center the items */
+    align-items: center;
+    gap: 10px;
+    width: 100%; /* Full width to accommodate both elements */
+    }
+    .canvas-container, .controls-container {
+        flex: none; /* Override the flex setting for smaller screens */
+        width: 100%; /* Full width on small screens */
+    }
+    }
 
-<!-- Fonts & Icons -->
-<link defer rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
-<link defer rel="stylesheet" href="{{ '/assets/css/scholar-icons.css' | relative_url | bust_file_cache }}">
-<link
-  defer
-  rel="stylesheet"
-  type="text/css"
-  href="{{ site.third_party_libraries.google_fonts.url.fonts }}"
->
+    .slider {
+    -webkit-appearance: none; /* Override default look */
+    width: 60%; /* Full width */
+    height: 15px; /* Slider track height */
+    background: #d3d3d3; /* Slider track color */
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    }
+    .slider:hover {
+        opacity: 1; /* Full opacity on hover */
+    }
+    /* Styles for the slider thumb (circle) */
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px; /* Width and height should be equal for a circle */
+        height: 25px; /* Equal to width */
+        background: #4CAF50; /* Thumb color */
+        border-radius: 50%; /* Rounded corners at 50% create a circle */
+        cursor: pointer;
+    }
+    .slider::-moz-range-thumb {
+        width: 25px; /* Width, equal to height for a circle */
+        height: 25px; /* Equal to width */
+        background: #4CAF50; /* Thumb color */
+        border-radius: 50%; /* Rounded corners at 50% create a circle */
+        cursor: pointer;
+    }
+    #bw {
+    display: inline-block; /* or 'inline' depending on your layout */
+    margin-right: 10px; /* Adjust spacing */
+    /* other styles as necessary */
+    }
+    /* Adjacent element styles */
+    .next-element {
+        clear: both; /* if dealing with floats */
+        /* other styles as necessary */
+    }
 
-<!-- Code Syntax Highlighting -->
-<link
-  defer
-  rel="stylesheet"
-  href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}"
-  media=""
-  id="highlight_theme_light"
->
+    .stylish-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 8px 12px; /* Top and bottom padding, left and right padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Font size */
+    transition: all 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+    .stylish-button:hover, .stylish-button:focus {
+        background-color: #45a049; /* Slightly darker green on hover/focus */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow on hover/focus */
+    }
+    .stylish-button:active {
+        background-color: #3e8e41; /* Even darker green when the button is clicked */
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Smaller shadow when clicked */
+    }
+    </style>
 
-{% if page.toc and page.toc.sidebar %}
-  <!-- Sidebar Table of Contents -->
-  <link defer href="{{ '/assets/css/bootstrap-toc.min.css' | relative_url | bust_file_cache }}" rel="stylesheet">
-{% endif %}
+<style>
+    .main-container2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+    }
+    .canvas-container2 {
+        flex: 1; /* 2 parts of the space */
+        max-width: 650px;
+    }
+    #myCanvas2 {
+        width: 100%;
+        height: auto;
+    }
+    .controls-container2 {
+        flex: 2; /* 1 part of the space */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .stylish-button2 {
+        background-color: #8ea6de;
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.3s;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .stylish-button2:hover, .stylish-button2:focus {
+        background-color: #8ea6de;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    .stylish-button2:active {
+        background-color: #8ea6de;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    .status2 {
+        font-size: 16px;
+    }
+    @media (max-width: 600px) {
+        .main-container2 {
+            flex-direction: column;
+            align-items: center;
+        }
+        .canvas-container2, .controls-container2 {
+            flex: none;
+            width: 100%;
+        }
+    }
+    .combined-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjust spacing between items as needed */
+    }
+</style>
 
-<!-- Styles -->
+    <!-- My custom font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-{% if page.pseudocode %}
-  <!-- pseudocode -->
-  <link
-    defer
-    rel="stylesheet"
-    href="{{ site.third_party_libraries.pseudocode.url.css }}"
-    integrity="{{ site.third_party_libraries.pseudocode.integrity.css }}"
-    crossorigin="anonymous"
-  >
-{% endif %}
 
-{% if site.icon.size <= 4 %}
-  <link
-    rel="shortcut icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>"
-  >
-{% elsif site.icon != blank %}
-  <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}">
-{% endif %}
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-<!-- Dark Mode -->
-<script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
-{% if site.enable_darkmode %}
-  <link
-    defer
-    rel="stylesheet"
-    href="{{ '/assets/css/jekyll-pygments-themes-native.css' | relative_url | bust_file_cache }}"
-    media="none"
-    id="highlight_theme_dark"
-  >
-  <script>
-    initTheme();
-  </script>
-{% endif %}
 
-{% if page.map %}
-  <!-- GeoJSON support via Leaflet -->
-  <link
-    defer
-    rel="stylesheet"
-    href="{{ site.third_party_libraries.leaflet.url.css }}"
-    integrity="{{ site.third_party_libraries.leaflet.integrity.css }}"
-    crossorigin="anonymous"
-  >
-{% endif %}
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+          },
+          options: {
+            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          },
+          loader: { load: ['[tex]/physics'] } // Load extensions only if needed
+        };
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            MathJax.typesetPromise(['#math-content']);
+        });
+    </script>
+    <!-- MathJax Script -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-{% if page.code_diff %}
-  <!-- diff2html -->
-  <link
-    defer
-    rel="stylesheet"
-    href="{{ site.third_party_libraries.highlightjs.url.css.light }}"
-    integrity="{{ site.third_party_libraries.highlightjs.integrity.css.light }}"
-    crossorigin="anonymous"
-    media="screen and (prefers-color-scheme: light)"
-  >
-  <link
-    defer
-    rel="stylesheet"
-    href="{{ site.third_party_libraries.highlightjs.url.css.dark }}"
-    integrity="{{ site.third_party_libraries.highlightjs.integrity.css.dark }}"
-    crossorigin="anonymous"
-    media="screen and (prefers-color-scheme: dark)"
-  >
-  <link
-    defer
-    rel="stylesheet"
-    href="{{ site.third_party_libraries.diff2html.url.css }}"
-    integrity="{{ site.third_party_libraries.diff2html.integrity.css }}"
-    crossorigin="anonymous"
-  >
-{% endif %}
+    <!-- Particle Script -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
 
-{% if page.images %}
-  {% if page.images.compare %}
-    <!-- Image comparison slider -->
-    <link
-      defer
-      rel="stylesheet"
-      href="{{ site.third_party_libraries.img-comparison-slider.url.css }}"
-      integrity="{{ site.third_party_libraries.img-comparison-slider.integrity.css }}"
-      crossorigin="anonymous"
-    >
-  {% endif %}
-  {% if page.images.lightbox2 %}
-    <!-- Lightbox2 -->
-    <link
-      defer
-      rel="stylesheet"
-      href="{{ site.third_party_libraries.lightbox2.url.css }}"
-      integrity="{{ site.third_party_libraries.lightbox2.integrity.css }}"
-      crossorigin="anonymous"
-    >
-  {% endif %}
-  {% if page.images.photoswipe %}
-    <!-- Photoswipe -->
-    <link
-      defer
-      rel="stylesheet"
-      href="{{ site.third_party_libraries.photoswipe.url.css }}"
-      crossorigin="anonymous"
-    >
-  {% endif %}
-  {% if page.images.slider %}
-    <!-- Image slider -->
-    <link
-      defer
-      rel="stylesheet"
-      href="{{ site.third_party_libraries.swiper.url.css }}"
-      integrity="{{ site.third_party_libraries.swiper.integrity.css }}"
-      crossorigin="anonymous"
-    >
-  {% endif %}
-  {% if page.images.spotlight %}
-    <!-- Spotlight -->
-    <link
-      defer
-      rel="stylesheet"
-      href="{{ site.third_party_libraries.spotlight.url.css }}"
-      integrity="{{ site.third_party_libraries.spotlight.integrity.css }}"
-      crossorigin="anonymous"
-    >
-  {% endif %}
-  {% if page.images.venobox %}
-    <!-- Venobox -->
-    <link
-      defer
-      rel="stylesheet"
-      href="{{ site.third_party_libraries.venobox.url.css }}"
-      integrity="{{ site.third_party_libraries.venobox.integrity.css }}"
-      crossorigin="anonymous"
-    >
-  {% endif %}
-{% endif %}
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-{% if page.tikzjax %}
-  <link defer rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
-{% endif %}
+    <!-- Bootstrap & MDB -->
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
+    <!-- <link rel="stylesheet" href="{{ '/assets/css/mdb.min.css' | relative_url | bust_file_cache }}"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@{{ site.mdb.version }}/css/mdb.min.css" integrity="{{ site.mdb.integrity.css }}" crossorigin="anonymous" />
+
+    <!-- Bootstrap Table -->
+    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@{{ site.bootstrap-table.version }}/dist/bootstrap-table.min.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}" media="" id="highlight_theme_light" />
+
+    {% if page.toc and page.toc.sidebar %}
+    <!-- Sidebar Table of Contents -->
+    <link href="{{ '/assets/css/bootstrap-toc.min.css' | relative_url | bust_file_cache }}" rel="stylesheet" />
+    {% endif %}
+
+    <!-- Styles -->
+    {% if site.icon.size <= 4 %}
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>">
+    {% elsif site.icon != blank %}
+    <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}"/>
+    {% endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+    <!-- Dark Mode -->
+    {% if site.enable_darkmode %}
+    <link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-native.css' | relative_url | bust_file_cache }}" media="none" id="highlight_theme_dark" />
+    <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
+    <script src="{{ '/assets/js/dark_mode.js' | relative_url | bust_file_cache }}"></script>
+    {% endif %}

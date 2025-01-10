@@ -23,7 +23,7 @@ social: true # includes social icons at the bottom of the page
 
 <hr>
 
-My name is Vidhan Kashyap, and I am a master’s student at Osaka University in Osaka, conducting research under the guidance of Prof. Masahiko Shibahara and Prof. Kunio Fujiwara. I graduated with a bachelor's degree in Mechanical Engineering from the Indian Institute of Technology, Kharagpur, in 2021.
+My name is Vidhan Kashyap, and I am a master’s student at Osaka University in Osaka, conducting research under the guidance of Prof. Kunio Fujiwara and Prof. Masahiko Shibahara. I graduated with a bachelor's degree in Mechanical Engineering from the Indian Institute of Technology, Kharagpur, in 2021.
 
 My research focuses on simulating nucleate boiling using advanced hybrid computational models. By combining Molecular Dynamics to analyze microscopic behavior near surfaces and continuum-scale Navier–Stokes equations to model larger fluid flow, I aim to better understand phase-change processes essential for energy systems and thermal management.
 
