@@ -11,6 +11,6 @@ children:
   - title: Projects
     permalink: /projects/
   - title: divider
-  - title: CV
-    permalink: /cv/
+  - title: Night Sky
+    permalink: /night-sky/
 ---

@@ -3,7 +3,6 @@ layout: about
 title: About
 permalink: /
 subtitle: >
-  "Rebuild it just the way it was, brick by brick."
     <div style="line-height:5px">
     <p><strong>Masters Student<strong></p>
     <p><strong>Micro Thermal Engineering<strong></p>
@@ -32,3 +31,8 @@ My research focuses on simulating nucleate boiling using advanced hybrid computa
 
 Outside the lab, I enjoy competitive programming, honing my problem-solving skills through algorithmic challenges. I’m an avid reader of novels, a nature enthusiast who loves hiking, and a photography hobbyist capturing life’s candid moments. I’m also passionate about watching and playing cricket, chess, solving Rubik’s cubes (pushing for a sub-1-minute solve!), and exploring fractal mathematics. To balance it all, I enjoy midday naps that recharge my creativity. Currently, I’m preparing for the N3 level of the Japanese language, immersing myself in its nuances and sharing my journey on my blog. You can find me on [Instagram](https://www.instagram.com/vidhankashyap/) and check out my blog for the latter!
 <hr>
+
+> <i class="fas fa-quote-left"></i>
+> <span style="font-family: 'Gloria Hallelujah', cursive;">Rebuild it just the way it was, brick by brick.</span>
+> <i class="fas fa-quote-right"></i><br />
+> —&nbsp;Bruce&nbsp;Wayne
