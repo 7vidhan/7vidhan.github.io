@@ -26,7 +26,7 @@ layout: default
       rounded' %}
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
+      40vw, 95vw"{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
@@ -34,7 +34,7 @@ layout: default
         {% endif %}
             {%- if page.profile.more_info %}
             <div class="more-info">
-              <div id="typedtext"></div>
+              <div id="typedtext" style="font-size: 13px;"></div>
               {{ page.profile.more_info }}
             </div>
             {%- endif %}
@@ -85,7 +85,7 @@ layout: default
 <script>
   const aText = [
       "Hi, I'm Vidhan Kashyap",
-      "I like to explore Science and Computing"
+      "I explore science and computing."
       // "Hover to reveal AI-generated me ~"
   ];
 
