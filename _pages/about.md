@@ -12,7 +12,7 @@ subtitle: >
 
 profile:
   align: left
-  image: my_pic.jpg
+  image: linkedin_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
 
