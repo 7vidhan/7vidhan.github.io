@@ -1,5 +1,4 @@
 body {
-    display: flex;
     justify-content: space-around;
     font-family: sans-serif;
     background: #fff;
@@ -7,16 +6,26 @@ body {
     padding: 20px;
 }
 .container {
-  width: 100vw !important;
-  max-width: 100vw!important;
-  margin-left: calc(-40vw + 50%)!important;
-  display: flex!important;
-  gap: 20px!important;
-  overflow-x: auto!important;
-  padding: 10px 20px!important;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+.row {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+margin-bottom: 20px;
 }
 .panel {
-    text-align: center;
+flex: 1 1 300px; /* flexible but starts at 300px wide */
+max-width: 450px; /* don’t let panels grow too big */
+border: 0px solid #fff;
+padding: 10px;
+background: #fff;
+text-align: center;
+box-sizing: border-box;
 }
 svg {
     background: #fff;
