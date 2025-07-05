@@ -1,4 +1,4 @@
-const svgSize = 300;
+const svgSize = 250;
 const gridSize = 4; // 5x5 grid
 const totalNodes = gridSize * gridSize; // 25 nodes
 
