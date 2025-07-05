@@ -9,7 +9,7 @@ body {
 .container {
   width: 100vw;
   max-width: 100vw;
-  margin-left: calc(-40vw + 50%);
+  margin-left: calc(-500vw + 50%);
   display: flex;
   gap: 20px;
   overflow-x: auto;
