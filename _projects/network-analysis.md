@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Social Network Analysis
-description: A visual exploration of graph traversal algorithms, showcasing their behavior and pathfinding capabilities in an interactive format.
+description: An interactive visualization of Demon Slayer story arcs through social network analysis, highlighting community structures and centrality measures to explore character influence and relationships.
 img: assets/img/DemonSlayer/thumbnail.png
 importance: 3
 category: fun
