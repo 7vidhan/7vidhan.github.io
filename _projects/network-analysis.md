@@ -7,7 +7,7 @@ importance: 3
 category: fun
 ---
 
-Feel free to  [try-it-out](https://7vidhan.github.io/pathfinding-algorithms/) and experience the pathfinding algorithms in action before diving into the details.
+Feel free to  [try-it-out](https://github.com/7vidhan/7vidhan.github.io/tree/main/assets/html/DemonSlayer/webpage/index.html) and experience the epidemic spreading in action before diving into the details.
 
 ### Demon Slayer Characters
 
