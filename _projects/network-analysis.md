@@ -7,7 +7,7 @@ importance: 3
 category: fun
 ---
 
-Feel free to  [try-it-out](https://github.com/7vidhan/7vidhan.github.io/tree/main/assets/html/DemonSlayer/webpage/index.html) and experience the epidemic spreading in action before diving into the details.
+Feel free to  [try-it-out](https://github.com/7vidhan.github.io/tree/main/assets/html/DemonSlayer/webpage/index.html) and experience the epidemic spreading in action before diving into the details.
 
 ### Demon Slayer Characters
 
@@ -69,7 +69,7 @@ Feel free to  [try-it-out](https://github.com/7vidhan/7vidhan.github.io/tree/mai
   </select>
 </div>
 
-<iframe id="arcFrame" src="" width="100%" height="600px" style="border:1px solid #ccc;"></iframe>
+<iframe id="arcFrame" src="" width="799" height="700px" style="border:0px solid #ccc;"></iframe>
 
 <script>
 function showArc() {
@@ -85,6 +85,9 @@ function showArc() {
     }
 }
 // Set default on page load
+const select = document.getElementById('arcSelect');
+select.value = "Final Selection Arc"; // 👈 Force default value
+showArc();
 window.onload = function() {
     showArc();
 };
@@ -102,7 +105,7 @@ window.onload = function() {
   </select>
 </div>
 
-<iframe id="heatmapFrame" width="100%" height="600px" style="border:1px solid #ccc;"></iframe>
+<iframe id="heatmapFrame" width="799" height="700px" style="border:1px solid #ccc;"></iframe>
 
 <script>
 function showHeatmap() {
@@ -118,6 +121,9 @@ function showHeatmap() {
 }
 
 // Set default on page load
+const selectCentrality = document.getElementById('centralitySelect');
+selectCentrality.value = "Closeness Centrality_heatmap"; // 👈 Force default value
+showHeatmap();
 window.onload = function() {
     showHeatmap();
 };
