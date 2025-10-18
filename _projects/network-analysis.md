@@ -7,7 +7,7 @@ importance: 3
 category: fun
 ---
 
-Feel free to  [try-it-out](https://github.com/7vidhan.github.io/tree/main/assets/html/DemonSlayer/webpage/index.html) and experience the epidemic spreading in action before diving into the details.
+Feel free to  [try it out]({{ '/assets/html/DemonSlayer/webpage/index.html' | relative_url }}) and experience the epidemic spreading in action before diving into the details.
 
 ### Demon Slayer Characters
 
