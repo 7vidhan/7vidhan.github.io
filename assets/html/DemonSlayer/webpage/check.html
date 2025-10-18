@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Network Graph with Cytoscape + Cola</title>
+
+  <!-- Cytoscape.js -->
+  <script src="https://unpkg.com/cytoscape@3.25.0/dist/cytoscape.min.js"></script>
+
+  <!-- WebCola library -->
+  <script src="https://unpkg.com/webcola/WebCola/cola.min.js"></script>
+
+  <!-- Cytoscape Cola extension -->
+  <script src="https://unpkg.com/cytoscape-cola@2.5.0/cytoscape-cola.js"></script>
+
+  <style>
+    #cy { width: 100%; height: 600px; border: 1px solid black; }
+    .highlighted { background-color: red !important; line-color: red !important; }
+    .selected { background-color: orange !important; }
+  </style>
+</head>
+<body>
+  <div id="cy"></div>
+
+  <script>
+    const nodesURL = "https://raw.githubusercontent.com/7vidhan/NetworkAnalysis/main/webpage/asset/nodes.csv";
+    const edgesURL = "https://raw.githubusercontent.com/7vidhan/NetworkAnalysis/main/webpage/asset/edges.csv";
+
+    let elements = { nodes: [], edges: [] };
+
+    fetch(nodesURL)
+      .then(r => r.text())
+      .then(text => {
+        const lines = text.trim().split("\n").slice(1);
+        elements.nodes = lines.map(id => ({ data: { id: id.trim() } }));
+        return fetch(edgesURL);
+      })
+      .then(r => r.text())
+      .then(text => {
+        const lines = text.trim().split("\n").slice(1);
+        elements.edges = lines.map(line => {
+          const [source, target] = line.split(",");
+          return { data: { source: source.trim(), target: target.trim() } };
+        });
+        initCytoscape(elements);
+      });
+
+    function initCytoscape(elements) {
+      const cy = cytoscape({
+        container: document.getElementById('cy'),
+        elements: elements,
+        style: [
+          { selector: 'node', style: { 'background-color': '#0074D9', 'label': 'data(id)', 'width': 20, 'height': 20, 'text-valign': 'center', 'color': '#fff', 'font-size': 8 } },
+          { selector: 'edge', style: { 'line-color': '#ccc', 'width': 1 } },
+          { selector: '.highlighted', style: { 'background-color': 'red', 'line-color': 'red' } },
+          { selector: '.selected', style: { 'background-color': 'orange' } }
+        ],
+        layout: {
+          name: 'cola',
+          nodeSpacing: 20,
+          edgeLengthVal: 40,
+          animate: true,
+          randomize: false,
+          maxSimulationTime: 4000
+        }
+      });
+
+      cy.on('mouseover', 'node', evt => {
+        const node = evt.target;
+        node.addClass('highlighted');
+        node.connectedEdges().addClass('highlighted');
+      });
+
+      cy.on('mouseout', 'node', evt => {
+        const node = evt.target;
+        node.removeClass('highlighted');
+        node.connectedEdges().removeClass('highlighted');
+      });
+
+      cy.on('tap', 'node', evt => {
+        const node = evt.target;
+        node.toggleClass('selected');
+      });
+    }
+  </script>
+</body>
+</html>
