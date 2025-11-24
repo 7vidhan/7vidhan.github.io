@@ -22,10 +22,10 @@
   },
   "work": [
     {
-      "name": "Graduate Engineer Trainee, Addverb Technologies",
-      "position": "Project Management",
-      "url": "https://www.mccormick.northwestern.edu/computer-science/",
-      "startDate": "2021-07-01",
+      "name": "Addverb Technologies",
+      "position": "Graduate Engineer Trainee/ Project Engineer",
+      "url": "https://addverb.com/",
+      "startDate": "2021-8-01",
       "endDate": "2022-09-10",
       "summary": "Engineering and Deployement of intra-warehouse automation systems.",
       "highlights": [
@@ -35,7 +35,7 @@
     {
       "name": "Micro Thermal Engineering Laboratory, Thermo-fluid Science",
       "position": "Research Student",
-      "url": "https://phys.ncts.ntu.edu.tw",
+      "url": "http://mte.mech.eng.osaka-u.ac.jp/index-en.html",
       "startDate": "2023-10-01",
       "endDate": "Now",
       "summary": "Focus on understanding near surface heat transfer during boiling process using CFD-MD coupling method.",
@@ -49,7 +49,7 @@
   "education": [
     {
       "institution": "Department of Mechanical Engineering, Osaka Univerty",
-      "url": "https://www.phys.ntu.edu.tw/enphysics/Default.html",
+      "url": "https://www.osaka-u.ac.jp/en",
       "area": "Micro Thermal Engineering",
       "studyType": "M. Sc. in Mechanical Engineering",
       "startDate": "2023-10-01",
@@ -59,8 +59,8 @@
     },
     {
       "institution": "Department of Mechanical Engineering, IIT Kharagpur",
-      "url": "https://www.phy.ncu.edu.tw/en/首頁-english/",
-      "area": "Numerical Methods for Fluid Science",
+      "url": "https://www.iitkgp.ac.in/",
+      "area": "Numerical Methods for Fluid Dynamics",
       "studyType": "B. Tech. in Mechanical Engineering",
       "startDate": "2017-09-01",
       "endDate": "2021-06-01",
@@ -79,11 +79,11 @@
     },
     {
       "language": "English",
-      "fluency": "Fluent"
+      "fluency": "TOEIC 975"
     },
     {
       "language": "Japanese",
-      "fluency": "N3"
+      "fluency": "Preparing for N2"
     }
   ],
   "interests": [],
