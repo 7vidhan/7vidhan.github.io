@@ -23,11 +23,12 @@ social: true # includes social icons at the bottom of the page
 
 <hr>
 
-My name is Vidhan Kashyap, and I am a master’s student at Osaka University in Osaka, conducting research under the guidance of Prof. Kunio Fujiwara and Prof. Masahiko Shibahara. I graduated with a bachelor's degree in Mechanical Engineering from the Indian Institute of Technology, Kharagpur, in 2021.
+My name is Vidhan Kashyap, and I am currently a master’s student at Osaka University, working under the guidance of Prof. Kunio Fujiwara and Prof. Masahiko Shibahara. I completed my bachelor’s degree in Mechanical Engineering from the Indian Institute of Technology, Kharagpur, in 2021.
 
-I am exploring nucleate boiling using hybrid computational models, combining Molecular Dynamics for surface-level behavior and Navier–Stokes equations for fluid flow. to model larger fluid flow, I aim to better understand phase-change processes essential for energy systems and thermal management.
+My research focuses on modeling electrochemical systems for supercapacitors using multiscale computational approaches. I work on bridging atomistic-level insights from Molecular Dynamics with continuum-scale descriptions of ion transport and charge distribution, to better understand electrokinetic behavior at parallel plate supercapacitor interfaces. Through this, I aim to contribute to the design and optimization of high-performance energy storage systems.
 
-Outside the lab, I enjoy competitive programming, honing my problem-solving skills through algorithmic challenges. I’m an avid reader of novels, a nature enthusiast who loves hiking, and a photography hobbyist capturing life’s candid moments. I’m also passionate about watching and playing cricket, chess, solving Rubik’s cubes (pushing for a sub-1-minute solve!), and exploring fractal mathematics. To balance it all, I enjoy midday naps that recharge my creativity. Currently, I’m preparing for the N3 level of the Japanese language, immersing myself in its nuances and sharing my journey on my blog. You can find me on [Instagram](https://www.instagram.com/vidhankashyap/) and check out my blog for the latter!
+Outside the lab, I enjoy competitive programming, which helps me continuously refine my analytical and problem-solving skills. I am also an avid reader, particularly of fiction, and enjoy spending time in nature through hiking and photography. Additionally, I have a strong interest in cricket and chess, both as a participant and a spectator.I am currently preparing for the JLPT N2 level, actively working on improving my Japanese language skills and documenting my learning journey through my blog. 
+You can find me on [Instagram](https://www.instagram.com/vidhankashyap/) and check out my blog for the latter!
 <hr>
 
 > <i class="fas fa-quote-left"></i>
