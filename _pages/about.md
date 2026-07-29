@@ -12,7 +12,7 @@ subtitle: >
 
 profile:
   align: left
-  image: linkedin_pic.jpg
+  image: bridge_dp.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
 
@@ -23,12 +23,16 @@ social: true # includes social icons at the bottom of the page
 
 <hr>
 
-My name is Vidhan Kashyap, and I am currently a master’s student at Osaka University, working under the guidance of Prof. Kunio Fujiwara and Prof. Masahiko Shibahara. I completed my bachelor’s degree in Mechanical Engineering from the Indian Institute of Technology, Kharagpur, in 2021.
+Hi, I’m Vidhan.
 
-My research focuses on modeling electrochemical systems for supercapacitors using multiscale computational approaches. I work on bridging atomistic-level insights from Molecular Dynamics with continuum-scale descriptions of ion transport and charge distribution, to better understand electrokinetic behavior at parallel plate supercapacitor interfaces. Through this, I aim to contribute to the design and optimization of high-performance energy storage systems.
+I’m a master’s student in Mechanical Engineering at The University of Osaka, where I work under the supervision of Prof. Kunio Fujiwara and Prof. Masahiko Shibahara. My research focuses on interfacial thermal transport in nanoscale confined systems, with a particular emphasis on understanding heat transfer across solid–liquid interfaces relevant to next-generation semiconductor and thermal management technologies.
 
-Outside the lab, I enjoy competitive programming, which helps me continuously refine my analytical and problem-solving skills. I am also an avid reader, particularly of fiction, and enjoy spending time in nature through hiking and photography. Additionally, I have a strong interest in cricket and chess, both as a participant and a spectator.I am currently preparing for the JLPT N2 level, actively working on improving my Japanese language skills and documenting my learning journey through my blog. 
-You can find me on [Instagram](https://www.instagram.com/vidhankashyap/) and check out my blog for the latter!
+I use Molecular Dynamics (MD) simulations to study water and ionic systems confined between platinum walls, investigating how interfacial structure, electrostatic interactions, and nanoscale confinement influence thermal transport and interfacial thermal resistance. Through this work, I aim to contribute to the design of more efficient thermal management strategies for advanced materials and energy-related technologies.
+
+My broader interests include computational heat transfer, molecular simulation, statistical mechanics, and multiscale modeling, and I work extensively with LAMMPS, Python, C++, Julia, and high-performance computing (HPC) environments.
+
+Beyond research, I enjoy exploring Japan through hiking and photography, often using weekends to discover trails, mountain towns, and landscapes across the Kansai region. I’m also an enthusiastic reader of fiction and history, and I enjoy cricket and chess as both a participant and a spectator. I’m currently learning Japanese and preparing for the JLPT N2, while occasionally writing about my experiences navigating research and life in Japan.
+
 <hr>
 
 > <i class="fas fa-quote-left"></i>

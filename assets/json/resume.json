@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Vidhan Kashyap",
-    "label": "Reseach Student, Mechanical Engineering",
+    "position": "Masters Student, Mechanical Engineering",
     "image": "",
-    "email": "kashyap@mte.mech.eng.osaka-u.ac.jp",
+    "email": "kashyap[a]mte.mech.eng.osaka-u.ac.jp",
     "url": "https://7vidhan.github.io",
-    "summary": "Exploring the intersection of Computational Fluid Dynamics and Molecular Dynamics",
+    "summary": "Modeling nanoscale heat transfer for next-generation semiconductor thermal management",
     "location": {
       "address": "1-1 Yamadaoka",
       "city": "Suita",
@@ -31,36 +31,36 @@
       "highlights": [
         "Robotics Engineering"
       ]
-    },
-    {
-      "name": "Micro Thermal Engineering Laboratory, Thermo-fluid Science",
-      "position": "Research Student",
-      "url": "http://mte.mech.eng.osaka-u.ac.jp/index-en.html",
-      "startDate": "2023-10-01",
-      "endDate": "Now",
-      "summary": "Focus on understanding near surface heat transfer during boiling process using CFD-MD coupling method.",
-      "highlights": [
-        "Computational Fluid Dynamics",
-        "Molecular Dynamics"
-      ]
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "Department of Mechanical Engineering, Osaka Univerty",
-      "url": "https://www.osaka-u.ac.jp/en",
-      "area": "Micro Thermal Engineering",
+      "institution": "The University of Osaka",
       "studyType": "M. Sc. in Mechanical Engineering",
+      "url": "http://mte.mech.eng.osaka-u.ac.jp/index-en.html",
+      "startDate": "2025-04-01",
+      "endDate": "Present",
+      "area": "Micro Thermal Engineering",
+      "courses": [
+        "Computational Fluid Dynamics",
+        "Molecular Dynamics"
+      ]
+    },
+    {
+      "institution": "The University of Osaka",
+      "url": "https://www.osaka-u.ac.jp/en",
+      "area": "Department of Mechanical Engineering",
+      "studyType": "Research Student",
       "startDate": "2023-10-01",
-      "endDate": "Now",
+      "endDate": "2025-03-31",
       "score": "",
       "courses": []
     },
     {
-      "institution": "Department of Mechanical Engineering, IIT Kharagpur",
+      "institution": "Indian Institute of Technology Kharagpur",
       "url": "https://www.iitkgp.ac.in/",
-      "area": "Numerical Methods for Fluid Dynamics",
+      "area": "Numerical Methods Study of Fluid Dynamics",
       "studyType": "B. Tech. in Mechanical Engineering",
       "startDate": "2017-09-01",
       "endDate": "2021-06-01",
