@@ -1,23 +1,29 @@
 <header>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  <nav id="navbar" class="navbar navbar-light nav-blue navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+        <a class="navbar-brand title font-weight-lighter text-white" href="{{ site.baseurl }}/" style="color: #ffffff !important;">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
-              <span class="font-weight-bold">
+              <span class="font-weight-bold text-white" style="color: #ffffff !important;">
                 {{- site.first_name -}}
               </span>
             {% endif %}
             {% if site.middle_name %}
-              {{- site.middle_name -}}
+              <span class="text-white" style="color: #ffffff !important;">
+                {{- site.middle_name -}}
+              </span>
             {% endif %}
             {% if site.last_name %}
-              {{- site.last_name -}}
+              <span class="text-white" style="color: #ffffff !important;">
+                {{- site.last_name -}}
+              </span>
             {% endif %}
           {% else %}
-            {{- site.title -}}
+            <span class="text-white" style="color: #ffffff !important;">
+              {{- site.title -}}
+            </span>
           {% endif %}
         </a>
       {% elsif site.enable_navbar_social %}
