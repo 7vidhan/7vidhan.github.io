@@ -11,7 +11,7 @@ profile:
   more_info: >
     <p>
         <i class="fas fa-envelope" style="color: #515151"></i>
-        <a href="mailto:kashyap@mte.mech.eng.osaka-u.ac.jp" style="text-decoration: none; font-size: 0.70rem;">
+        <a href="mailto:kashyap@mte.mech.eng.osaka-u.ac.jp" style="text-decoration: none; font-size: 0.7em;">
             kashyap (at) mte.mech.eng.osaka-u.ac.jp
         </a> 
     </p>
@@ -28,7 +28,7 @@ profile:
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
 <hr>

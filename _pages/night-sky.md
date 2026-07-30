@@ -6,6 +6,7 @@ nav: false
 nav_order: 6
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
 <style>
   #typedtext {
