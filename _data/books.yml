@@ -1,0 +1,39 @@
+- title: "My Name Is Red"
+  author: "Orhan Pamuk"
+  rating: 5
+  cover_url: "https://covers.openlibrary.org/b/isbn/9780571268832-L.jpg"
+
+- title: "Sapiens: A Brief History of Humankind"
+  author: "Yuval Noah Harari"
+  rating: 5
+  cover_url: "https://covers.openlibrary.org/b/isbn/9780771038518-L.jpg"
+
+- title: "Crime and Punishment"
+  author: "Fyodor Dostoevsky"
+  rating: 5
+  cover_url: "https://covers.openlibrary.org/b/isbn/9780679734505-L.jpg"
+
+- title: "The Alchemist"
+  author: "Paulo Coelho"
+  rating: 4
+  cover_url: "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+
+- title: "What an Owl Knows"
+  author: "Jennifer Ackerman"
+  rating: 4
+  cover_url: "https://covers.openlibrary.org/b/isbn/9780593298886-L.jpg"
+
+- title: "The Brothers Karamazov"
+  author: "Fyodor Dostoevsky"
+  rating: 5
+  cover_url: "https://covers.openlibrary.org/b/isbn/9781857150704-L.jpg"
+
+- title: "Daughter of Destiny"
+  author: "Benazir Bhutto"
+  rating: 4
+  cover_url: "https://covers.openlibrary.org/b/isbn/9780061672682-L.jpg"
+
+- title: "Notes From Underground"
+  author: "Fyodor Dostoevsky"
+  rating: 4
+  cover_url: "https://covers.openlibrary.org/b/isbn/9780679734529-L.jpg"

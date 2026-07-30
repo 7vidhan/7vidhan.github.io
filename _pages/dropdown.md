@@ -5,12 +5,15 @@ nav: true
 nav_order: 8
 dropdown: true
 children:
-  - title: Blog
-    permalink: /blog/
+  - title: Books
+    permalink: /books/
   - title: divider
   - title: Projects
     permalink: /projects/
   - title: divider
   - title: Night Sky
     permalink: /night-sky/
+  - title: divider
+  - title: Conferences
+    permalink: /conference-countdown/
 ---

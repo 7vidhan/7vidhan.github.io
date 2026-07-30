@@ -117,23 +117,18 @@ nav_order: 6
 <div id="particles-js"></div>
 
 <div class="sky-content" id="sky-content">
-  <h1 class="post-title" style="font-family: 'Gloria Hallelujah', cursive; margin-bottom: 20px;">Welcome to the Night Sky</h1>
+  <h1 class="post-title" style="font-family: 'Gloria Hallelujah', cursive; margin-bottom: 20px; color: white;">Welcome to the Night Sky</h1>
     
   <p class="build-with">
+  <span style="color: white;">
   :sparkles: Built with <a href="https://vincentgarreau.com/particles.js/" target="_blank">Particles.js</a>. 
   See source code here <a href="https://github.com/Physics-Morris/night-sky" target="_blank" style="color: #ffddaa;">[GitHub]</a>. Share this night sky ~ :milky_way:
-  </p>
-
-  <p>
-  <a class="twitter-share-button"
-    href="https://twitter.com/intent/tweet?text=Check%20out%20this%20beautiful%20Night%20Sky%20Wallpaper!&url=https://github.com/Physics-Morris/night-sky&hashtags=NightSky,Wallpaper,ParticlesJS" data-size="large"> Tweet 
-  </a>
+  </span>
   </p>
 
   <button id="fullscreen-button" class="fullscreen-btn">Full Screen</button>
 
 </div>
-
 
 <script>
   function initializeParticles() {
