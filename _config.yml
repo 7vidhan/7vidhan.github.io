@@ -8,10 +8,10 @@ middle_name:
 last_name: Kashyap
 contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Vidhan Kashyap's personal website — "Master's student in Mechanical Engineering at The University of Osaka, Japan". Projects, research, and writing.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: Vidhan Kashyap, Mechanical Engineering, The University of Osaka, IIT Kharagpur, Molecular Dynamics, Semiconductor, Thermodynamics
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ❑ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -62,16 +62,16 @@ max_width: 1080px
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
 
-# github_username: zrqiao # your GitHub user name
+github_username: 7vidhan # your GitHub user name
 # twitter_username: ZhuoranQ # your Twitter handle
-# linkedin_username: zhuoran-qiao-269003153 # your LinkedIn user name
+linkedin_username: vidhan-kashyap-739a7b148 # your LinkedIn user name
 # scholar_userid: -u83TOkAAAAJ # your Google Scholar ID
 # orcid_id: 0000-0002-5704-7331 # your ORCID ID
 # medium_username: # your Medium username
