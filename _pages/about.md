@@ -33,13 +33,13 @@ social: false # includes social icons at the bottom of the page
 
 <hr>
 
-I’m a master’s student in Mechanical Engineering at The University of Osaka, where I work under the supervision of Prof. Kunio Fujiwara and Prof. Masahiko Shibahara. My research focuses on interfacial thermal transport in nanoscale confined systems, with a particular emphasis on understanding heat transfer across solid–liquid interfaces relevant to next-generation semiconductor and thermal management technologies.
+I’m a master’s student in Mechanical Engineering at The University of Osaka, where I work under the supervision of Prof. Kunio Fujiwara and Prof. Masahiko Shibahara. My research focuses on interfacial thermal transport in nanoscale confined systems, with a particular emphasis on understanding heat transfer across solid-liquid interfaces relevant to next generation semiconductor manufacturing and thermal management technologies.
 
-I use Molecular Dynamics (MD) simulations to study water and ionic systems confined between platinum walls, investigating how interfacial structure, electrostatic interactions, and nanoscale confinement influence thermal transport and interfacial thermal resistance. Through this work, I aim to contribute to the design of more efficient thermal management strategies for advanced materials and energy-related technologies.
+I use Molecular Dynamics simulations to study water and ionic systems confined in nanochannels, investigating how interfacial structure, electrostatic interactions, and nanoscale confinement influence thermal transport and interfacial thermal resistance. I aim to contribute to the design of more efficient thermal management strategies for advanced materials and energy-related technologies.
 
-My broader interests include computational heat transfer, molecular simulation, statistical mechanics, and multiscale modeling, and I work extensively with LAMMPS, Python, C++, Julia, and high-performance computing (HPC) environments.
+My broader interests include computational heat transfer, molecular simulation, statistical mechanics, and multiscale modeling, and I work extensively with LAMMPS, Python, C++ and HPC environments.
 
-Beyond research, I enjoy exploring Japan through hiking and photography, often using weekends to discover trails, mountain towns, and landscapes across the Kansai region. I’m also an enthusiastic reader of fiction and history, and I enjoy cricket and chess as both a participant and a spectator. 
+Beyond research, I enjoy exploring Japan through hiking and photography, often using weekends to discover trails, mountain towns, and landscapes across the Kansai region. I’m also an enthusiastic reader of fiction and history, and I enjoy Badminton, Cricket and Chess as both a participant and a spectator. 
 
 Feel free to **reach out** if you think we should **[connect](mailto:kashyap@mte.mech.eng.osaka-u.ac.jp)** !
 
