@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://7vidhan.github.io/sitemap.xml
+Sitemap: https://vidhankashyap.com/sitemap.xml
