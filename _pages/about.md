@@ -37,7 +37,7 @@ I’m a master’s student in Mechanical Engineering at The University of Osaka,
 
 I use Molecular Dynamics simulations to study water and ionic systems confined in nanochannels, investigating how interfacial structure, electrostatic interactions, and nanoscale confinement influence thermal transport and interfacial thermal resistance. I aim to contribute to the design of more efficient thermal management strategies for advanced materials and energy-related technologies.
 
-My broader interests include computational heat transfer, molecular simulation, statistical mechanics, and multiscale modeling, and I work extensively with LAMMPS, Python, C++ and HPC environments.
+My broader interests include computational heat transfer, molecular simulation and statistical mechanics, and I work extensively with LAMMPS, Python, C++ and HPC environments.
 
 Beyond research, I enjoy exploring Japan through hiking and photography, often using weekends to discover trails, mountain towns, and landscapes across the Kansai region. I’m also an enthusiastic reader of fiction and history, and I enjoy Badminton, Cricket and Chess as both a participant and a spectator. 
 
