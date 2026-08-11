@@ -45,5 +45,5 @@ Feel free to **reach out** if you think we should **[connect](mailto:kashyap@mte
 
 <hr>
 
-> <i class="fas fa-quote-left"></i> > <span style="font-family: 'Gloria Hallelujah', cursive;">Count what is countable, measure what is measurable, and what is not measurable, make measurable.</span> > <i class="fas fa-quote-right"></i><br />
-> —&nbsp;Galileo &nbsp;Galilei
+<!-- > <i class="fas fa-quote-left"></i>  <span style="font-family: 'Gloria Hallelujah', cursive;">Count what is countable, measure what is measurable, and what is not measurable, make measurable.</span>  <i class="fas fa-quote-right"></i><br />
+> —&nbsp;Galileo &nbsp;Galilei -->

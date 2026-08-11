@@ -1,11 +1,10 @@
 {
   "basics": {
     "name": "Vidhan Kashyap",
-    "position": "Masters Student, Mechanical Engineering",
+    "position": "Master's Student, Mechanical Engineering",
     "image": "",
     "email": "kashyap[a]mte.mech.eng.osaka-u.ac.jp",
-    "url": "https://7vidhan.github.io",
-    "summary": "Modeling nanoscale heat transfer for next-generation semiconductor thermal management",
+    "Bio": "Master’s student in Mechanical Engineering at The University of Osaka, researching nanoscale heat transfer and interfacial thermal transport using molecular simulations for next-generation semiconductor and thermal management technologies.",
     "location": {
       "address": "1-1 Yamadaoka",
       "city": "Suita",
@@ -23,7 +22,7 @@
   "work": [
     {
       "name": "Addverb Technologies",
-      "position": "Graduate Engineer Trainee/ Project Engineer",
+      "position": "Graduate Engineer Trainee / Project Engineer",
       "url": "https://addverb.com/",
       "startDate": "2021-8-01",
       "endDate": "2022-09-10",
