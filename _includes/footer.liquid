@@ -1,8 +1,5 @@
-{% if site.footer_fixed %}
-  <footer class="footer-section footer-blue fixed-bottom">
-{% else %}
-  <footer class="footer-section footer-blue sticky-bottom mt-5">
-{% endif %}
+<footer class="footer-section footer-blue {% if site.footer_fixed %}fixed-bottom{% else %}sticky-bottom mt-5{% endif %}">
+
   <div class="container py-4">
     <div class="footer-content">
       <div class="row text-start justify-content-between">
