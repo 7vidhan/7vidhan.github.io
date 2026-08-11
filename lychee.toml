@@ -13,4 +13,6 @@ exclude = [
   "^https://scholar\\.google\\.com",
   "^https://upload\\.wikimedia\\.org",
   "^https://github\\.com/.*/blob/.*#",
+  "^https://github\\.com/alshedivat/al-folio/blob/main/_sass/_base\\.scss",
+  "https://www.iitkgp.ac.in/",
 ]
