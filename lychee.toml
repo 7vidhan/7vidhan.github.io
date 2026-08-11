@@ -1,0 +1,16 @@
+# lychee.toml — repo root
+
+# Treat these status codes as OK (don't fail the build on them)
+accept = [200, 201, 202, 203, 204, 301, 302, 403, 429, 401, 503]
+
+# Skip these domains/URLs entirely (known flaky or unreliable for automated checks)
+exclude = [
+  "^https://stackoverflow\\.com",
+  "^http://www\\.intmath\\.com",
+  "^https://docs\\.conda\\.io",
+  "^https://unsplash\\.com",
+  "^https://jsonresume\\.org",
+  "^https://scholar\\.google\\.com",
+  "^https://upload\\.wikimedia\\.org",
+  "^https://github\\.com/.*/blob/.*#",
+]
