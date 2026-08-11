@@ -9,8 +9,3 @@ description:
 toc:
   sidebar: left
 ---
-
-## My CVs
-
-- [Intern Resume](assets/pdf/Intern25_Vidhan_Resume.pdf){:target="_blank"}
-- [Shukatsu CV](assets/pdf/Shukatsu_CV.pdf){:target="_blank"}
