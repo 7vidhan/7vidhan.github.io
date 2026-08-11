@@ -48,5 +48,26 @@ jobs:
         uses: lycheeverse/lychee-action@v2.1.0
         with:
           fail: true
-          # removed md files that include liquid tags
-          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --exclude-path _posts/2025-01-24-Graphs.md --verbose --no-progress './**/*.md' './**/*.html'
+          args: >-
+            --user-agent 'curl/7.54'
+            --exclude-path README.md
+            --exclude-path _pages/404.md
+            --exclude-path _pages/blog.md
+            --exclude-path _posts/2018-12-22-distill.md
+            --exclude-path _posts/2023-04-24-videos.md
+            --exclude-path _posts/2025-01-24-Graphs.md
+            --exclude-path unused_posts
+            --exclude-path unused_projects
+            --exclude 'intmath\.com'
+            --exclude 'stackoverflow\.com'
+            --exclude 'unsplash\.com'
+            --exclude 'scholar\.google\.com'
+            --exclude 'jsonresume\.org'
+            --exclude 'docs\.conda\.io'
+            --exclude 'upload\.wikimedia\.org'
+            --exclude 'github\.com/.*/blob/.*#'
+            --exclude 'github\.com/alshedivat/al-folio/blob/main/_sass/_base\.scss'
+            --verbose
+            --no-progress
+            './**/*.md'
+            './**/*.html'
