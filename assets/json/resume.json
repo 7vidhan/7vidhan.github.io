@@ -28,9 +28,7 @@
       "startDate": "2021-8-01",
       "endDate": "2022-09-10",
       "summary": "Engineering and Deployement of intra-warehouse automation systems.",
-      "highlights": [
-        "Robotics Engineering"
-      ]
+      "highlights": ["Robotics Engineering"]
     }
   ],
   "volunteer": [],
@@ -42,10 +40,7 @@
       "startDate": "2025-04-01",
       "endDate": "Present",
       "area": "Micro Thermal Engineering",
-      "courses": [
-        "Computational Fluid Dynamics",
-        "Molecular Dynamics"
-      ]
+      "courses": ["Computational Fluid Dynamics", "Molecular Dynamics"]
     },
     {
       "institution": "The University of Osaka",

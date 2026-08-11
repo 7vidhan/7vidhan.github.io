@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Working on it. Stay tuned! In the meantime, explore my research interests. 
+description: Working on it. Stay tuned! In the meantime, explore my research interests.
 nav: true
 nav_order: 2
 ---

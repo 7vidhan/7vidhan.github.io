@@ -1,28 +1,33 @@
 <footer class="footer-section footer-blue {% if site.footer_fixed %}fixed-bottom{% else %}sticky-bottom mt-5{% endif %}">
-
   <div class="container py-4">
     <div class="footer-content">
       <div class="row text-start justify-content-between">
-        
         <!-- Column 1: Logo & Copyright -->
         <div class="col-lg-6 col-md-6 mb-4 text-start">
           <div class="footer-widget text-start">
             <div class="footer-logo mb-3 text-start">
               <a href="{{ site.baseurl }}/">
-                <img src="{{ '/assets/img/logo_new.png' | relative_url }}" class="img-fluid" alt="logo" style="max-width: 200px;" onerror="this.style.display='none'">
+                <img
+                  src="{{ '/assets/img/logo_new.png' | relative_url }}"
+                  class="img-fluid"
+                  alt="logo"
+                  style="max-width: 200px;"
+                  onerror="this.style.display='none'"
+                >
               </a>
             </div>
             <div class="footer-text text-start">
               <p class="mb-2">
-                &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{ site.footer_text }}
+                &copy; Copyright {{ site.time | date: '%Y' }}
+                {{ site.first_name }}
+                {{ site.middle_name }}
+                {{ site.last_name }}. {{ site.footer_text }}
               </p>
               {%- if site.impressum_path -%}
                 <p class="mb-1"><a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.</p>
               {%- endif -%}
               {%- if site.last_updated -%}
-                <p class="small opacity-75 mb-0">
-                  Last updated: {{ "now" | date: '%B %d, %Y' }}.
-                </p>
+                <p class="small opacity-75 mb-0">Last updated: {{ 'now' | date: '%B %d, %Y' }}.</p>
               {%- endif %}
             </div>
           </div>
@@ -32,7 +37,12 @@
         <div class="col-lg-5 col-md-6 mb-4 text-start">
           <div class="footer-widget text-start">
             <div class="footer-widget-heading mb-3 text-start">
-              <h4 class="text-white fw-bold m-0" style="font-size: 1.1rem; border-bottom: 2px solid var(--global-theme-color, #ff5733); display: inline-block; padding-bottom: 4px;">Contact</h4>
+              <h4
+                class="text-white fw-bold m-0"
+                style="font-size: 1.1rem; border-bottom: 2px solid var(--global-theme-color, #ff5733); display: inline-block; padding-bottom: 4px;"
+              >
+                Contact
+              </h4>
             </div>
             <div class="contact-info d-flex flex-column gap-2 text-start align-items-start">
               <div class="contact-item d-flex align-items-center gap-2 text-start">
@@ -41,26 +51,19 @@
               </div>
               <div class="contact-item d-flex align-items-center gap-2 text-start">
                 <i class="fas fa-envelope" style="width: 20px; text-align: center;"></i>
-                <a href="mailto:kashyap@mte.mech.eng.osaka-u.ac.jp">
-                  kashyap (at) mte.mech.eng.osaka-u.ac.jp
-                </a>
+                <a href="mailto:kashyap@mte.mech.eng.osaka-u.ac.jp"> kashyap (at) mte.mech.eng.osaka-u.ac.jp </a>
               </div>
               <div class="contact-item d-flex align-items-center gap-2 text-start">
                 <i class="fa-brands fa-threads" style="width: 20px; text-align: center;"></i>
-                <a href="https://www.threads.net/@vidhankashyap" target="_blank" rel="noopener">
-                  @vidhankashyap
-                </a>
+                <a href="https://www.threads.net/@vidhankashyap" target="_blank" rel="noopener"> @vidhankashyap </a>
               </div>
               <div class="contact-item d-flex align-items-center gap-2 text-start">
                 <i class="ai ai-google-scholar" style="width: 20px; font-size: 1.1em; text-align: center;"></i>
-                <a href="https://scholar.google.com/citations?user=sKCeDp4AAAAJ" target="_blank" rel="noopener">
-                  Google Scholar
-                </a>
+                <a href="https://scholar.google.com/citations?user=sKCeDp4AAAAJ" target="_blank" rel="noopener"> Google Scholar </a>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>

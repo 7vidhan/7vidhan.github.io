@@ -1,60 +1,62 @@
 body {
-    display: flex;
-    justify-content: space-around;
-    font-family: sans-serif;
-    background: #fff;
-    margin: 0;
-    padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 20px;
 }
 .panel {
-    text-align: center;
+  text-align: center;
 }
 svg {
-    background: #88539e;
-    border: 0px solid #ccc;
-    margin-top: 10px;
+  background: #88539e;
+  border: 0px solid #ccc;
+  margin-top: 10px;
 }
 .node {
-    fill: #bea65e;
-    stroke: #000;
+  fill: #bea65e;
+  stroke: #000;
 }
 .node.highlight {
-    fill: #0c0b00;
+  fill: #0c0b00;
 }
 .link {
-    stroke: #aad;
+  stroke: #aad;
 }
 .link.highlight {
-    stroke: #7db368;
-    stroke-width: 2px;
+  stroke: #7db368;
+  stroke-width: 2px;
 }
 
 .node.selected {
-    fill: #ebeae6; /* or any distinct color */
-    stroke: #000;
-    stroke-width: 2px;
+  fill: #ebeae6; /* or any distinct color */
+  stroke: #000;
+  stroke-width: 2px;
 }
 
 .node.normal {
-    fill: green;
+  fill: green;
 }
 
 .node.infected {
-    fill: red;
+  fill: red;
 }
 
-.node.risky{
-    fill: orange; opacity: 0.5;
+.node.risky {
+  fill: orange;
+  opacity: 0.5;
 }
 
 .node.people {
-    fill: rgb(143, 226, 143);
+  fill: rgb(143, 226, 143);
 }
 
 .node.influencer {
-    fill: rgb(10, 10, 236);
+  fill: rgb(10, 10, 236);
 }
 
 .node.crowd {
-    fill: rgb(227, 139, 211); opacity: 0.5;
+  fill: rgb(227, 139, 211);
+  opacity: 0.5;
 }

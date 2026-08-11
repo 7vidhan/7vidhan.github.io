@@ -4,7 +4,7 @@ title: Exploring Tochigi
 date: 2025-05-01 01:58:00
 description: Where history, lights, and lakes tell timeless tales!
 tags: travel
-categories: 
+categories:
 thumbnail: assets/img/tochigi_diaries/thumbnail.jpg
 images:
   lightbox2: true
@@ -51,7 +51,6 @@ Every corner was alive with history: ninja shows, samurai duels, and cheerful me
     </a>
 </div>
 
-
 ---
 
 ### Lake Chuzenji Serenity and the Sky Ride
@@ -86,7 +85,6 @@ We went boating across the lake, the gentle ripples shimmering like glass under 
     </a>
 </div>
 
-
 ---
 
 ### Lights, Reflections, and Wonder: Tokyo TeamLabs
@@ -120,7 +118,6 @@ Every step changed the colors and patterns—it wasn’t just art you look at; i
         zoomable=true/>
     </a>
 </div>
-
 
 ---
 

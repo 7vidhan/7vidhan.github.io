@@ -4,7 +4,7 @@ title: Exploring Kyoto
 date: 2024-12-28 01:58:00
 description: Where culture meets breathtaking beauty!
 tags: travel
-categories: 
+categories:
 thumbnail: assets/img/kyoto_diaries/mystyle.jpg
 images:
   lightbox2: true
@@ -51,7 +51,6 @@ Getting to Kurama-dera isn’t just a visit; it’s an experience. The hike lead
     zoomable=true/> -->
 </div>
 
-
 ---
 
 ### Blossoms and Night Vibes
@@ -86,7 +85,6 @@ While autumn gets all the love, let’s not forget the plum blossoms that pop up
     style="width: 40vw; min-width: 50px;"
     zoomable=true/> -->
 </div>
-
 
 ---
 

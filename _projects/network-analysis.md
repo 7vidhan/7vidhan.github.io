@@ -7,7 +7,7 @@ importance: 3
 category: fun
 ---
 
-Feel free to  [try it out]({{ '/assets/html/DemonSlayer/webpage/index.html' | relative_url }}) and experience the epidemic spreading in action before diving into the details.
+Feel free to [try it out]({{ '/assets/html/DemonSlayer/webpage/index.html' | relative_url }}) and experience the epidemic spreading in action before diving into the details.
 
 ### Demon Slayer Characters
 
@@ -19,33 +19,33 @@ Feel free to  [try it out]({{ '/assets/html/DemonSlayer/webpage/index.html' | re
 
 - ### Degree Centrality
 
-    **Definition:** Degree centrality assigns an importance score based simply on the number of links held by each node.  
-    **What it tells us:** Spot popular or socially active individuals who can quickly share information with their immediate circle. 
-    **When to use it:** To find people who know many others and can quickly share information. To find highly connected nodes, popular nodes, or those that can quickly reach the wider network.  
+  **Definition:** Degree centrality assigns an importance score based simply on the number of links held by each node.  
+   **What it tells us:** Spot popular or socially active individuals who can quickly share information with their immediate circle.
+  **When to use it:** To find people who know many others and can quickly share information. To find highly connected nodes, popular nodes, or those that can quickly reach the wider network.
 
 - ### Betweenness Centrality
 
-    **Definition:** Betweenness centrality measures the number of times a node lies on the shortest path between other nodes.  
-    **What it tells us:** Identifies nodes that act as bridges or intermediaries in the network.  
-    **When to use it:** To identify connectors who link separate friend groups or social circles. They are often important for spreading news between clusters. Betweenness is useful for analyzing communication dynamics, but should be used with care. A high betweenness count could indicate someone holds authority over disparate clusters in a network, or just that they are on the periphery of both clusters. High betweenness may indicate authority over who control the flow of information between groups.  
+  **Definition:** Betweenness centrality measures the number of times a node lies on the shortest path between other nodes.  
+   **What it tells us:** Identifies nodes that act as bridges or intermediaries in the network.  
+   **When to use it:** To identify connectors who link separate friend groups or social circles. They are often important for spreading news between clusters. Betweenness is useful for analyzing communication dynamics, but should be used with care. A high betweenness count could indicate someone holds authority over disparate clusters in a network, or just that they are on the periphery of both clusters. High betweenness may indicate authority over who control the flow of information between groups.
 
 - ### Closeness Centrality
 
-    **Definition:** Closeness centrality scores nodes based on their overall proximity to all other nodes in the network.  
-    **What it tells us:** How quickly a node can reach or influence the entire network. For finding the individuals who are best placed to influence the entire network most quickly.
-    **When to use it:** Useful for identifying effective “broadcasters” in the network. If the network is highly connected (almost everyone is friends with almost everyone else), then most people are already “close” to everyone, so their closeness scores will be very similar. In that case, closeness centrality doesn’t help much to tell who is more influential overall. However, if the network has clusters (groups of friends that are tightly connected within but loosely connected to other groups), closeness centrality is useful within each cluster to identify who can reach most people in that group fastest.
+  **Definition:** Closeness centrality scores nodes based on their overall proximity to all other nodes in the network.  
+   **What it tells us:** How quickly a node can reach or influence the entire network. For finding the individuals who are best placed to influence the entire network most quickly.
+  **When to use it:** Useful for identifying effective “broadcasters” in the network. If the network is highly connected (almost everyone is friends with almost everyone else), then most people are already “close” to everyone, so their closeness scores will be very similar. In that case, closeness centrality doesn’t help much to tell who is more influential overall. However, if the network has clusters (groups of friends that are tightly connected within but loosely connected to other groups), closeness centrality is useful within each cluster to identify who can reach most people in that group fastest.
 
 - ### Eigenvector Centrality
 
-    **Definition:** Eigenvector centrality measures a node’s influence based on its connections and the importance of its neighbors.  
-    **What it tells us:** Highlights nodes with influence across the entire network, not just immediate connections.  
-    **When to use it:** EigenCentrality can identify nodes with influence over the whole network, not just those directly connected to it. Useful for social networks, information propagation, or understanding networks like malware propagation.  
+  **Definition:** Eigenvector centrality measures a node’s influence based on its connections and the importance of its neighbors.  
+   **What it tells us:** Highlights nodes with influence across the entire network, not just immediate connections.  
+   **When to use it:** EigenCentrality can identify nodes with influence over the whole network, not just those directly connected to it. Useful for social networks, information propagation, or understanding networks like malware propagation.
 
 - ### PageRank
 
-    **Definition:** PageRank is a variant of eigenvector centrality that accounts for link direction and weight.  
-    **What it tells us:** Shows nodes whose influence extends beyond direct connections, reflecting authority in the network.  
-    **When to use it:** Ideal for citation networks, web authority, or networks where direction and weighted influence are important. Famous for its use in Google’s search algorithm. PageRank is famously one of the ranking algorithms behind the original Google search engine (the ‘Page’ part of its name comes from creator and Google founder, Larry Page). 
+  **Definition:** PageRank is a variant of eigenvector centrality that accounts for link direction and weight.  
+   **What it tells us:** Shows nodes whose influence extends beyond direct connections, reflecting authority in the network.  
+   **When to use it:** Ideal for citation networks, web authority, or networks where direction and weighted influence are important. Famous for its use in Google’s search algorithm. PageRank is famously one of the ranking algorithms behind the original Google search engine (the ‘Page’ part of its name comes from creator and Google founder, Larry Page).
 
 ---
 
@@ -130,4 +130,3 @@ window.onload = function() {
 </script>
 
 ---
-

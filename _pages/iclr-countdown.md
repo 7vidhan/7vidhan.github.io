@@ -5,4 +5,4 @@ nav: false
 permalink: /conference-countdown/
 ---
 
-{% include conference_countdown.html %} 
+{% include conference_countdown.html %}

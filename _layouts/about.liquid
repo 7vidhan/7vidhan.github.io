@@ -1,13 +1,12 @@
 ---
 layout: default
 ---
-
-{% if page.url == "/" %}
-<div id="vanta-bg" style="position: fixed; width: 100vw; height: 100vh; top:0; left:0; z-index:-1;"></div>
-<button id="toggle-bird-btn" aria-label="Toggle Birds">
-  <span class="off">OFF</span>
-  <span class="on">ON</span>
-</button>
+{% if page.url == '/' %}
+  <div id="vanta-bg" style="position: fixed; width: 100vw; height: 100vh; top:0; left:0; z-index:-1;"></div>
+  <button id="toggle-bird-btn" aria-label="Toggle Birds">
+    <span class="off">OFF</span>
+    <span class="on">ON</span>
+  </button>
 {% endif %}
 
 <div class="post">
@@ -25,7 +24,10 @@ layout: default
 
   <article>
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}" style="max-width: 240px; margin: 0 1.5rem 1rem 0;">
+      <div
+        class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}"
+        style="max-width: 240px; margin: 0 1.5rem 1rem 0;"
+      >
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
@@ -41,12 +43,12 @@ layout: default
             cache_bust=true
           %}
         {% endif %}
-            {%- if page.profile.more_info %}
-            <div class="more-info">
-              <div id="typedtext" style="font-size: 13px;"></div>
-              {{ page.profile.more_info }}
-            </div>
-            {%- endif %}
+        {%- if page.profile.more_info %}
+          <div class="more-info">
+            <div id="typedtext" style="font-size: 13px;"></div>
+            {{ page.profile.more_info }}
+          </div>
+        {%- endif %}
       </div>
     {% endif %}
 
@@ -93,45 +95,45 @@ layout: default
 
 <script>
   const aText = [
-      "Hi, I'm Vidhan Kashyap",
-      "I explore science and computing."
-      // "Hover to reveal AI-generated me ~"
+    "Hi, I'm Vidhan Kashyap",
+    'I explore science and computing.',
+    // "Hover to reveal AI-generated me ~"
   ];
 
   let iSpeed = 80;
-  let iDeleteSpeed = 30; 
+  let iDeleteSpeed = 30;
   let iPauseBetween = 1500;
   let iIndex = 0;
   let iTextPos = 0;
   let iDirection = 1;
-  const destination = document.getElementById("typedtext");
+  const destination = document.getElementById('typedtext');
 
   function typewriter() {
-      if (!destination) {
-          console.error("Typedtext element not found");
-          return;
-      }
+    if (!destination) {
+      console.error('Typedtext element not found');
+      return;
+    }
 
-      if (iDirection === 1) {
-          destination.innerHTML = aText[iIndex].substring(0, iTextPos) + '<span style="color: #FF5733;">_</span>';;
-          iTextPos++;
-          if (iTextPos > aText[iIndex].length) {
-              iDirection = -1;
-              setTimeout(typewriter, iPauseBetween);
-              return;
-          }
-      } else {
-          destination.innerHTML = aText[iIndex].substring(0, iTextPos) + '<span style="color: #FF5733;">_</span>';;
-          iTextPos--;
-          if (iTextPos < 0) {
-              iDirection = 1;
-              iIndex = (iIndex + 1) % aText.length;
-              setTimeout(typewriter, 300);
-              return;
-          }
+    if (iDirection === 1) {
+      destination.innerHTML = aText[iIndex].substring(0, iTextPos) + '<span style="color: #FF5733;">_</span>';
+      iTextPos++;
+      if (iTextPos > aText[iIndex].length) {
+        iDirection = -1;
+        setTimeout(typewriter, iPauseBetween);
+        return;
       }
+    } else {
+      destination.innerHTML = aText[iIndex].substring(0, iTextPos) + '<span style="color: #FF5733;">_</span>';
+      iTextPos--;
+      if (iTextPos < 0) {
+        iDirection = 1;
+        iIndex = (iIndex + 1) % aText.length;
+        setTimeout(typewriter, 300);
+        return;
+      }
+    }
 
-      setTimeout(typewriter, iDirection === 1 ? iSpeed : iDeleteSpeed);
+    setTimeout(typewriter, iDirection === 1 ? iSpeed : iDeleteSpeed);
   }
 
   typewriter();

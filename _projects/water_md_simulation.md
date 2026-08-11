@@ -12,7 +12,6 @@ toc:
   - name: Constraints in Molecular Dynamics
   - name: Periodic Boundary Conditions
   - name: Velocity Scaling
-
 ---
 
 ## Brief Introduction to Molecular Dynamics
@@ -30,7 +29,7 @@ $$
 For this purpose we need to be able to calculate the forces $$\mathbf{f}_i$$ acting on the atoms, and these are usually derived from a potential energy $$U(\mathbf{r}^N)$$, where $$\mathbf{r}^N = (\mathbf{r}_1, \mathbf{r}_2, \ldots, \mathbf{r}_N)$$ represents the complete set of $$3N$$ atomic coordinates. The Lennard Jones potential is the most commonly used form:
 
 $$
-U_{LJ}(r) = 4\varepsilon 
+U_{LJ}(r) = 4\varepsilon
 \left[ \left( \frac{\sigma}{r} \right)^{12}
       - \left( \frac{\sigma}{r} \right)^{6} \right],
 $$
@@ -219,7 +218,4 @@ $$
 
 This method is straightforward and helps maintain the target temperature, but it does not generate a correct canonical ensemble. More advanced thermostats like Nosé-Hoover or Langevin are typically used for rigorous temperature control.
 
-
 ---
-
-

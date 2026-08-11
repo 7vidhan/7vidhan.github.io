@@ -4,7 +4,7 @@ title: Exploring Wakayama
 date: 2025-05-01 01:58:00
 description: Where ocean whispers meet endless adventure!
 tags: travel
-categories: 
+categories:
 thumbnail: assets/img/wakayama_diaries/flower.jpg
 images:
   lightbox2: true
@@ -45,7 +45,6 @@ My day began at Adventure World, Wakayama’s famous blend of zoo, aquarium, and
     zoomable=true/> -->
 </div>
 
-
 ---
 
 ### Sun, Sand, and Shirahama Bliss
@@ -85,7 +84,6 @@ Dinner? A seafood barbecue by the beach—freshly grilled, perfectly smoky, and 
     </a>
 </div>
 
-
 ---
 
 ### Beneath and Beyond: Sandanbeki Caves and Cliffs
@@ -117,7 +115,6 @@ Outside, the Sandanbeki Cliffs stretched endlessly, where the sky and sea melt i
     style="width: 40vw; min-width: 50px;"
     zoomable=true/> -->
 </div>
-
 
 ---
 

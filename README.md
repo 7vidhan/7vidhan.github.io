@@ -24,27 +24,33 @@ This site includes my background, projects, research interests, and blog posts.
 To run this site locally:
 
 1. **Install prerequisites**
+
    - [Ruby](https://www.ruby-lang.org/en/documentation/installation/) (2.7+)
    - [Bundler](https://bundler.io/): `gem install bundler`
 
 2. **Clone the repository**
+
    ```bash
    git clone https://github.com/7vidhan/7vidhan.github.io.git
    cd 7vidhan.github.io
    ```
 
 3. **Install dependencies**
+
    ```bash
    bundle install
    ```
 
 4. **Serve locally**
+
    ```bash
    bundle exec jekyll serve
    ```
+
    The site will be available at `http://localhost:4000`.
 
    Alternatively, if using Docker (recommended by al-folio for consistent builds):
+
    ```bash
    docker compose up
    ```
@@ -95,7 +101,7 @@ To help this site surface correctly in search results:
 ## Acknowledgements
 
 Built on top of the excellent [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme,
-originally based on [*folio](https://github.com/bogoli/-folio) by [Amir Pourmand](https://amirpourmand.me/).
+originally based on [\*folio](https://github.com/bogoli/-folio) by [Amir Pourmand](https://amirpourmand.me/).
 
 ## License
 

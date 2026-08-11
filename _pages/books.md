@@ -6,9 +6,9 @@ nav: false
 nav_order: 7
 ---
 
-I enjoy reading in my free time. 
+I enjoy reading in my free time.
 Here’s a growing list of books I’ve read and loved.
-I’d love to **[connect](mailto:morris@cs.unc.edu)** and have a chat !
+I’d love to **[connect](mailto:kashyap@mte.mech.eng.osaka-u.ac.jp)** and have a chat !
 
 <style>
   .books-wrapper {

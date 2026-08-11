@@ -112,7 +112,6 @@ nav_order: 6
   }
 </style>
 
-
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <div id="particles-js"></div>
@@ -127,7 +126,7 @@ nav_order: 6
   </span>
   </p>
 
-  <button id="fullscreen-button" class="fullscreen-btn">Full Screen</button>
+<button id="fullscreen-button" class="fullscreen-btn">Full Screen</button>
 
 </div>
 

@@ -4,7 +4,7 @@ title: Exploring Kansai
 date: 2024-12-28 01:57:00
 description: Where tradition blends with modern wonders!
 tags: travel
-categories: 
+categories:
 thumbnail: assets/img/kansai_diaries/mystyle.jpg
 images:
   lightbox2: true
@@ -60,7 +60,6 @@ For the hiking enthusiast in me, Koyasan was a dream. The hike? A marathon-worth
     </a>
 </div>
 
-
 ---
 
 ### Off the Beaten Path
@@ -99,7 +98,6 @@ Life’s all about going the extra mile, right? Shimada may not have been part o
         zoomable=true/>
     </a>
 </div>
-
 
 ---
 

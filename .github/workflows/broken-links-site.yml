@@ -43,5 +43,5 @@ jobs:
         uses: lycheeverse/lychee-action@v2.1.0
         with:
           fail: true
-          base: './_site'
+          base: "./_site"
           args: --no-progress --config ./lychee.toml './_site/**/*.html'

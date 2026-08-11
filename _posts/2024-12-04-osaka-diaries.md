@@ -4,7 +4,7 @@ title: Exploring Osaka
 date: 2024-12-28 01:59:00
 description: Tag along as I eat, hike, and get lost in Osaka!
 tags: travel
-categories: 
+categories:
 thumbnail: assets/img/osaka_diaries/osaka_castle.jpg
 images:
   lightbox2: true
@@ -53,7 +53,6 @@ When I first moved to Osaka, the very first place I visited was Osaka Castle, a 
     zoomable=true/> -->
 </div>
 
-
 ---
 
 ### Temples, Shrines, and All Things Zen
@@ -86,7 +85,6 @@ Osaka, like any Japanese city worth its salt, boasts a treasure trove of shrines
     style="width: 40vw; min-width: 50px;"
     zoomable=true/> -->
 </div>
-
 
 ---
 
