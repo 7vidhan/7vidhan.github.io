@@ -33,7 +33,7 @@ social: false # includes social icons at the bottom of the page
 
 <hr>
 
-I’m a master’s student in Mechanical Engineering at The University of Osaka, where I work under the supervision of Prof. Kunio Fujiwara and Prof. Masahiko Shibahara. My research focuses on interfacial thermal transport in nanoscale confined systems, with a particular emphasis on understanding heat transfer across solid-liquid interfaces relevant to next generation semiconductor manufacturing and thermal management technologies.
+I’m  master’s student in Mechanical Engineering at The University of Osaka, where I work under the supervision of Prof. Kunio Fujiwara and Prof. Masahiko Shibahara. My research focuses on interfacial thermal transport in nanoscale confined systems, with a particular emphasis on understanding heat transfer across solid-liquid interfaces relevant to next generation semiconductor manufacturing and thermal management technologies.
 
 I use Molecular Dynamics simulations to study water and ionic systems confined in nanochannels, investigating how interfacial structure, electrostatic interactions, and nanoscale confinement influence thermal transport and interfacial thermal resistance. I aim to contribute to the design of more efficient thermal management strategies for advanced materials and energy-related technologies.
 
